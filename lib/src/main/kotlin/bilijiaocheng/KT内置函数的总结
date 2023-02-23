@@ -1,0 +1,23 @@
+
+
+TODO 内置函数的总结：
+
+TODO apply ： info.apply
+1、 apply函数的返回类型， 永远是  info 本身 跟    also 一样
+2、 apply函数 的匿名函数持有的是  this == info 与    run 一样
+
+TODO let ： 集合.let
+1、 let函数的返回类型， 根据匿名函数最后一行的变化而变化  跟  run 一样
+2、 let函数 的匿名函数持有的是  this == 集合 与    alse 一样
+
+TODO run ： str.run
+1、 run函数的返回类型， 根据匿名函数最后一行的变化而变化 跟   let 一样
+2、 run函数 的匿名函数持有的是  this == str 与   apply 一样
+
+TODO with ： with(str)  whit基本上和run一样，只是使用的时候不同
+1、 with函数的返回类型， 根据匿名函数最后一行的变化而变化 跟  let 一样
+2、 with函数 的匿名函数持有的是 this == str 与   apply 一样
+
+TODO also ： str.also
+1、 also函数的返回类型， 永远是 str 本身 跟    apply 一样
+2、 also函数 的匿名函数持有的是 this == str 与   let 一样
